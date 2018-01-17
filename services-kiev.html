@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/manifest.json">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <!-- end favicons -->
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/mmenu/jquery.mmenu.all.css">
+    <link rel="stylesheet" href="libs/lightbox/lightbox.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body class="body-services">
+    <div class="wrapper" id="wrapperHome">
+        <header>
+            <div class="container ">
+                <div class="row">
+                        <div class="col-md-4 pl-0 col-sm-4 col-xs-6">
+                            <div class="header-logo">
+                                <a href="#" class="header-logo__link"><img src="img/logo.svg" alt="company-logo" class="header-logo__img"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-8 pr-0 col-sm-8 col-xs-6">
+                            <div class="header-content d-flex">
+                                <form action="#" class="header-form">
+                                    <button type="submit" name="button" class="header-form__submit"><i class="icon-search-symbol"></i></button>
+                                    <input type="text" class="header-form__input" placeholder="Найти...">
+                                </form>
+                                <div class="header-contacts">
+                                    <span><i class="icon-telephone"></i></span>
+                                    <div class="header-phones">
+                                        <a href="tel:+380443313818" class="header_phone">+38 (044) 331 38 18</a>
+                                        <a href="tel:+380443313833" class="header_phone">+38 (044) 331 38 33</a>
+                                    </div>
+                                </div>
+                                <div class="btn btn-header" id="callbackBtn">заказать звонок</div>
+                                <div class="multiLang">
+                                    <i class="icon-translate multilang__icon"></i>
+                                    <span class="multilang__ua">UA</span>
+                                    <span class="multiLang__ru">RU</span>
+                                </div>
+                                <div class="fb fb-top">
+                                    <a href="#" class="fb__link"><i class="icon-facebook"></i></a>
+                                </div>
+                                <div class="mobileMenu__open"><a href="#mobileMenu" class="mobileMenu__link"><i class="icon-menu"></i></a></div>
+                            </div>
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="col px-0">
+                        <div class="header-bottom">
+                            <nav>
+                                <ul class="nav__list ">
+                                    <li class="nav__item"><a href="index.html" class="nav__link">главная</a></li>
+                                    <li class="nav__item dropdown">
+                                        <a href="#" class="nav__link">услуги</a>
+                                        <ul class="nav__subList dropdownList">
+                                            <li class="nav__subItem ">
+                                                <a href="services-kiev.html" class="nav__subLink">Грузоперевозки по Киеву и области</a>
+                                            </li>
+                                            <li class="nav__subItem ">
+                                                <a href="#" class="nav__subLink">Грузоперевозки по Украине</a>
+                                            </li>
+                                            <li class="nav__subItem ">
+                                                <a href="#" class="nav__subLink">Спецтехника</a>
+                                            </li>
+                                            <li class="nav__subItem ">
+                                                <a href="#" class="nav__subLink">Мувинг</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav__item"><a href="comments.html" class="nav__link">отзывы</a></li>
+                                    <li class="nav__item"><a href="about.html" class="nav__link">о компании</a></li>
+                                    <li class="nav__item"><a href="contacts.html" class="nav__link">контакты</a></li>
+                                </ul>
+                                <div class="mobileMenu" id="mobileMenu">
+
+                                    <ul class="mobileList">
+                                        <li class="mobileList__item"><a href="#wrapperHome" class="mobileList__link"><i class="icon-close_menu"></i></a></li>
+                                        <li class="mobileList__item">
+                                            <form action="#" class="mobileList-form">
+                                                <input type="text" class="mobileList-form__input" placeholder="Найти...">
+                                                <button type="submit" name="button" class="mobileList-form__submit"><i class="icon-search-symbol"></i></button>
+                                            </form>
+                                        </li>
+                                        <li class="mobileList__item"><a href="index.html" class="mobileList__link">главная</a></li>
+                                        <li class="mobileList__item">
+                                            <a href="#mm-2" class="mobileList__link">услуги</a>
+                                            <ul class="mobileSubmenu">
+                                                <li class="mobileSubmenu__item"><a href="services-kiev.html" class="mobileSubmenu__link">Грузоперевозки по Киеву и области</a></li>
+                                                <li class="mobileSubmenu__item"><a href="#" class="mobileSubmenu__link">Грузоперевозки по Украине</a></li>
+                                                <li class="mobileSubmenu__item"><a href="#" class="mobileSubmenu__link">Спецтехника</a></li>
+                                                <li class="mobileSubmenu__item"><a href="#" class="mobileSubmenu__link">Мувинг</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="mobileList__item"><a href="comments.html" class="mobileList__link">отзывы</a></li>
+                                        <li class="mobileList__item"><a href="about.html" class="mobileList__link">о компании</a></li>
+                                        <li class="mobileList__item"><a href="contacts.html" class="mobileList__link">контакты</a></li>
+                                        <li class="mobileList__item">
+                                            <div class="mobileList-contacts">
+                                                <span><i class="icon-telephone"></i></span>
+                                                <div class="mobileList-phones">
+                                                    <a href="tel:+380443313818" class="mobileList_phone">+38 (044) 331 38 18</a>
+                                                    <a href="tel:+380443313833" class="mobileList_phone">+38 (044) 331 38 33</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="mobileList__item">
+                                            <div class="mobileList__multiLang">
+                                                <i class="icon-translate mobileList__icon"></i>
+                                                <span class="multilang__ua">UA</span>
+                                                <span class="multiLang__ru">RU</span>
+                                            </div>
+                                        </li>
+                                        <li class="mobileList__item">
+                                            <div class="fb mobileList-fb">
+                                                <a href="#" class="fb__link"><i class="icon-facebook"></i></a>
+                                            </div>
+                                        </li>
+                                        <li class="mobileList__item btn-holder">
+                                            <div class="btn mobileList-btn" id="callbackBtn_mobile">заказать звонок</div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="section-cargoList">
+            <div class="container px-0">
+                <div class="row no-gutters">
+                    <div class="col">
+                        <div class="breadCrumbs">
+                            <ul class="breadCrumbs__list">
+                                <li class="breadCrumbs__listItem"><a href="index.html" class="breadCrumbs__link breadCrumbs__link_home">Главная</a></li>
+                                <li class="breadCrumbs__listItem"><a href="#" class="breadCrumbs__link ">Услуги</a></li>
+                                <li class="breadCrumbs__listItem"><a href="services-kiev.html" class="breadCrumbs__link ">Грузоперевозки по Киеву и области</a></li>
+                            </ul>
+                        </div>
+                        <h2 class="cargoList__title section-title"><span>Грузоперевозки</span> по Киеву и области</h2>
+                        <p class="cargoList__subtitle">Транспортная компания «Сантранс» предлагает следующий спектр услуг:</p>
+                        <div class="cargoList">
+                            <div class="cargoListItem">
+                                <div class="cargoListItem__icon"><i class="icon-gears"></i></div>
+                                <p class="cargoListItem__caption">Вантажнни перевозки по г. Киев и Украина от 1т до 20т</p>
+                            </div>
+                            <div class="cargoListItem">
+                                <div class="cargoListItem__icon"><i class="icon-placeholder"></i></div>
+                                <p class="cargoListItem__caption">Попутный транспорт и сборные грузы по территории Украины</p>
+                            </div>
+                            <div class="cargoListItem">
+                                <div class="cargoListItem__icon"><i class="icon-box"></i></div>
+                                <p class="cargoListItem__caption">Организация и осуществление квартирных, складских и офисных перездов</p>
+                            </div>
+                            <div class="cargoListItem">
+                                <div class="cargoListItem__icon"><i class="icon-wardrobe"></i></div>
+                                <p class="cargoListItem__caption">Услуги грузчиков, разборка / сборка мебели и их упаковки</p>
+                            </div>
+                            <div class="cargoListItem">
+                                <div class="cargoListItem__icon"><i class="icon-container"></i></div>
+                                <p class="cargoListItem__caption">Перевозка крупногабаритных грузов</p>
+                            </div>
+                            <div class="cargoListItem">
+                                <div class="cargoListItem__icon"><i class="icon-excavator"></i></div>
+                                <p class="cargoListItem__caption">Аренда спецтехники</p>
+                            </div>
+                            <div class="cargoListItem">
+                                <div class="cargoListItem__icon"><i class="icon-crane"></i></div>
+                                <p class="cargoListItem__caption">Услуги  эвакуатора</p>
+                            </div>
+                            <div class="cargoListItem">
+                                <div class="cargoListItem__icon"><i class="icon-garbage"></i></div>
+                                <p class="cargoListItem__caption">Вивезеня строительного мусора</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- section-cargoList -->
+        <section class="section-pricing">
+            <div class="container px-0">
+                <div class="row no-gutters">
+                    <div class="col">
+                        <h2 class="pricing__title section-title"><span>Стоимость</span> Услуг</h2>
+                        <div class="pricing">
+                            <div class="pricingItem">
+                                <div class="pricingItem__container">
+                                    <figure class="pricingItem__figure"><img src="img/pricing/truck1.png" alt="" class="pricingItem__img"></figure>
+                                    <div class="pricingItem__textBlock">
+
+                                        <div class="pricingItem__text pricingItem__text_top">
+                                                <p class="pricingItem__title pricingItem__title_top"><span class="pricingItem__textItem pricingItem__textItem_18px">Газель Тент </span><span class="pricingItem__textItem pricingItem__textItem_16pxUpp">3</span><span class="pricingItem__textItem_16px">м</span></p>
+                                                <div class="pricingItem__textLeft">
+                                                    <p class="pricingItem__textItem">без НДС</p>
+                                                    <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px pricingItem__textItem">150</span> грн/час</p>
+                                                </div>
+                                                <div class="pricingItem__textRight">
+                                                    <p class="pricingItem__textItem">б/н с НДС</p>
+                                                    <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">180</span> грн/час</p>
+                                                </div>
+                                        </div>
+                                        <div class="pricingItem__text pricingItem__text_mid">
+                                            <p class="pricingItem__title">Подачи автомобиля:</p>
+                                            <div class="pricingItem__textLeft">
+                                                <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">150</span> грн</p>
+                                            </div>
+                                            <div class="pricingItem__textRight">
+                                                <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">180</span> грн</p>
+                                            </div>
+                                        </div>
+                                        <div class="pricingItem__text pricingItem__text_bottom">
+                                            <p class="pricingItem__title pricingItem__title_mb0">Минимальный заказ</p>
+                                            <p class="pricingItem__subtitle">2 часа + подача:</p>
+                                            <div class="pricingItem__textLeft">
+                                                <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">450</span> грн</p>
+                                            </div>
+                                            <div class="pricingItem__textRight">
+                                                <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">540</span> грн</p>
+                                            </div>
+                                        </div>
+                                        <div class="pricingItem__text pricingItem__text_bottom pricingItem__textCenter">
+                                            <p class="pricingItem__textItem pricingItem__textItem_16px ">1.5 тонники</p>
+                                        </div>
+                                        <div class="pricingItem__text pricingItem__text_bottom pricingItem__textCenter">
+                                            <p class="pricingItem__textItem pricingItem__textItem_16px ">Объем 9м<sup>3</sup></p>
+                                        </div>
+                                    </div><!-- pricingItem__textBlock -->
+                                </div>
+
+                                <div class="pricingItem__buttons">
+                                    <a href="service-open.html" class="pricingItem__button btn pricingItem__button_white">Подробнее</a>
+                                    <div class="pricingItem__button btn pricingItem__button_blue">Заказать</div>
+                                </div>
+                            </div><!-- pricingItem -->
+                            <div class="pricingItem ">
+                                <div class="pricingItem__container">
+                                    <figure class="pricingItem__figure"><img src="img/pricing/truck2.png" alt="" class="pricingItem__img"></figure>
+                                    <div class="pricingItem__textBlock ">
+
+                                        <div class="pricingItem__text pricingItem__text_top">
+                                                <p class="pricingItem__title pricingItem__title_top"><span class="pricingItem__textItem pricingItem__textItem_18px">Газель Борт </span><span class="pricingItem__textItem pricingItem__textItem_16pxUpp">3</span><span class="pricingItem__textItem_16px">м</span></p>
+                                                <div class="pricingItem__textLeft">
+                                                    <p class="pricingItem__textItem">без НДС</p>
+                                                    <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px pricingItem__textItem">150</span> грн/час</p>
+                                                </div>
+                                                <div class="pricingItem__textRight">
+                                                    <p class="pricingItem__textItem">б/н с НДС</p>
+                                                    <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">180</span> грн/час</p>
+                                                </div>
+                                        </div>
+                                        <div class="pricingItem__text pricingItem__text_mid">
+                                            <p class="pricingItem__title">Подачи автомобиля:</p>
+                                            <div class="pricingItem__textLeft">
+                                                <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">150</span> грн</p>
+                                            </div>
+                                            <div class="pricingItem__textRight">
+                                                <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">180</span> грн</p>
+                                            </div>
+                                        </div>
+                                        <div class="pricingItem__text pricingItem__text_bottom">
+                                            <p class="pricingItem__title pricingItem__title_mb0">Минимальный заказ</p>
+                                            <p class="pricingItem__subtitle">2 часа + подача:</p>
+                                            <div class="pricingItem__textLeft">
+                                                <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">450</span> грн</p>
+                                            </div>
+                                            <div class="pricingItem__textRight">
+                                                <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">540</span> грн</p>
+                                            </div>
+                                        </div>
+                                        <div class="pricingItem__text pricingItem__text_bottom pricingItem__textCenter ">
+                                            <p class="pricingItem__textItem pricingItem__textItem_16px ">1.5 тонники</p>
+                                        </div>
+                                    </div><!-- pricingItem__textBlock -->
+                                </div>
+                                <div class="pricingItem__buttons">
+                                    <a href="service-open.html" class="pricingItem__button btn pricingItem__button_white">Подробнее</a>
+                                    <div class="pricingItem__button btn pricingItem__button_blue">Заказать</div>
+                                </div>
+                            </div><!-- pricingItem -->
+                            <div class="pricingItem">
+                                <div class="pricingItem__container">
+                                    <figure class="pricingItem__figure"><img src="img/pricing/truck1.png" alt="" class="pricingItem__img"></figure>
+                                    <div class="pricingItem__textBlock">
+
+                                        <div class="pricingItem__text pricingItem__text_top">
+                                                <p class="pricingItem__title pricingItem__title_top"><span class="pricingItem__textItem pricingItem__textItem_18px">Газель Тент </span><span class="pricingItem__textItem pricingItem__textItem_14pxUpp">4.1</span><span class="pricingItem__textItem_14px">м</span></p>
+                                                <div class="pricingItem__textLeft">
+                                                    <p class="pricingItem__textItem">без НДС</p>
+                                                    <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px pricingItem__textItem">160</span> грн/час</p>
+                                                </div>
+                                                <div class="pricingItem__textRight">
+                                                    <p class="pricingItem__textItem">б/н с НДС</p>
+                                                    <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">190</span> грн/час</p>
+                                                </div>
+                                        </div>
+                                        <div class="pricingItem__text pricingItem__text_mid">
+                                            <p class="pricingItem__title">Подачи автомобиля:</p>
+                                            <div class="pricingItem__textLeft">
+                                                <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">160</span> грн</p>
+                                            </div>
+                                            <div class="pricingItem__textRight">
+                                                <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">190</span> грн</p>
+                                            </div>
+                                        </div>
+                                        <div class="pricingItem__text pricingItem__text_bottom">
+                                            <p class="pricingItem__title pricingItem__title_mb0">Минимальный заказ</p>
+                                            <p class="pricingItem__subtitle">2 часа + подача:</p>
+                                            <div class="pricingItem__textLeft">
+                                                <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">480</span> грн</p>
+                                            </div>
+                                            <div class="pricingItem__textRight">
+                                                <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">570</span> грн</p>
+                                            </div>
+                                        </div>
+                                        <div class="pricingItem__text pricingItem__text_bottom pricingItem__textCenter">
+                                            <p class="pricingItem__textItem pricingItem__textItem_16px ">2 тонники</p>
+                                        </div>
+                                        <div class="pricingItem__text pricingItem__text_bottom pricingItem__textCenter">
+                                            <p class="pricingItem__textItem pricingItem__textItem_16px ">Объем 17м<sup>3</sup></p>
+                                        </div>
+                                    </div><!-- pricingItem__textBlock -->
+                                </div>
+
+                                <div class="pricingItem__buttons">
+                                    <a href="service-open.html" class="pricingItem__button btn pricingItem__button_white">Подробнее</a>
+                                    <div class="pricingItem__button btn pricingItem__button_blue">Заказать</div>
+                                </div>
+                            </div><!-- pricingItem -->
+                            <div class="pricingItem">
+                                <div class="pricingItem__container">
+                                    <figure class="pricingItem__figure"><img src="img/pricing/truck2.png" alt="" class="pricingItem__img"></figure>
+                                    <div class="pricingItem__textBlock">
+
+                                        <div class="pricingItem__text pricingItem__text_top">
+                                                <p class="pricingItem__title pricingItem__title_top"><span class="pricingItem__textItem pricingItem__textItem_18px">Газель Борт </span><span class="pricingItem__textItem pricingItem__textItem_14pxUpp">4.1</span><span class="pricingItem__textItem_14px">м</span></p>
+                                                <div class="pricingItem__textLeft">
+                                                    <p class="pricingItem__textItem">без НДС</p>
+                                                    <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px pricingItem__textItem">160</span> грн/час</p>
+                                                </div>
+                                                <div class="pricingItem__textRight">
+                                                    <p class="pricingItem__textItem">б/н с НДС</p>
+                                                    <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">190</span> грн/час</p>
+                                                </div>
+                                        </div>
+                                        <div class="pricingItem__text pricingItem__text_mid">
+                                            <p class="pricingItem__title">Подачи автомобиля:</p>
+                                            <div class="pricingItem__textLeft">
+                                                <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">160</span> грн</p>
+                                            </div>
+                                            <div class="pricingItem__textRight">
+                                                <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">190</span> грн</p>
+                                            </div>
+                                        </div>
+                                        <div class="pricingItem__text pricingItem__text_bottom">
+                                            <p class="pricingItem__title pricingItem__title_mb0">Минимальный заказ</p>
+                                            <p class="pricingItem__subtitle">2 часа + подача:</p>
+                                            <div class="pricingItem__textLeft">
+                                                <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">480</span> грн</p>
+                                            </div>
+                                            <div class="pricingItem__textRight">
+                                                <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">570</span> грн</p>
+                                            </div>
+                                        </div>
+                                        <div class="pricingItem__text pricingItem__text_bottom pricingItem__textCenter">
+                                            <p class="pricingItem__textItem pricingItem__textItem_16px ">2 тонники</p>
+                                        </div>
+                                    </div><!-- pricingItem__textBlock -->
+                                </div>
+
+                                <div class="pricingItem__buttons">
+                                    <a href="service-open.html" class="pricingItem__button btn pricingItem__button_white">Подробнее</a>
+                                    <div class="pricingItem__button btn pricingItem__button_blue">Заказать</div>
+                                </div>
+                            </div><!-- pricingItem -->
+                            <div class="pricingItem">
+                                <div class="pricingItem__container">
+                                    <figure class="pricingItem__figure"><img src="img/pricing/truck3.png" alt="" class="pricingItem__img"></figure>
+                                    <div class="pricingItem__textBlock">
+
+                                        <div class="pricingItem__text pricingItem__text_top">
+                                                <p class="pricingItem__title pricingItem__title_top"><span class="pricingItem__textItem pricingItem__textItem_18px">Борт </span><span class="pricingItem__textItem pricingItem__textItem_14pxUpp">6.2</span><span class="pricingItem__textItem_14px">м</span></p>
+                                                <div class="pricingItem__textLeft">
+                                                    <p class="pricingItem__textItem">без НДС</p>
+                                                    <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px pricingItem__textItem">260</span> грн/час</p>
+                                                </div>
+                                                <div class="pricingItem__textRight">
+                                                    <p class="pricingItem__textItem">б/н с НДС</p>
+                                                    <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">315</span> грн/час</p>
+                                                </div>
+                                        </div>
+                                        <div class="pricingItem__text pricingItem__text_mid">
+                                            <p class="pricingItem__title">Подачи автомобиля:</p>
+                                            <div class="pricingItem__textLeft">
+                                                <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">260</span> грн</p>
+                                            </div>
+                                            <div class="pricingItem__textRight">
+                                                <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">315</span> грн</p>
+                                            </div>
+                                        </div>
+                                        <div class="pricingItem__text pricingItem__text_bottom">
+                                            <p class="pricingItem__title pricingItem__title_mb0">Минимальный заказ</p>
+                                            <p class="pricingItem__subtitle">2 часа + подача:</p>
+                                            <div class="pricingItem__textLeft">
+                                                <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">1040</span> грн</p>
+                                            </div>
+                                            <div class="pricingItem__textRight">
+                                                <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">1260</span> грн</p>
+                                            </div>
+                                        </div>
+                                        <div class="pricingItem__text pricingItem__text_bottom pricingItem__textCenter">
+                                            <p class="pricingItem__textItem pricingItem__textItem_16px ">5 тонники</p>
+                                        </div>
+                                    </div><!-- pricingItem__textBlock -->
+                                </div>
+
+                                <div class="pricingItem__buttons">
+                                    <a href="service-open.html" class="pricingItem__button btn pricingItem__button_white">Подробнее</a>
+                                    <div class="pricingItem__button btn pricingItem__button_blue">Заказать</div>
+                                </div>
+                            </div><!-- pricingItem -->
+                            <div class="pricingItem">
+                                <div class="pricingItem__container">
+                                    <figure class="pricingItem__figure"><img src="img/pricing/truck4.png" alt="" class="pricingItem__img"></figure>
+                                    <div class="pricingItem__textBlock">
+
+                                        <div class="pricingItem__text pricingItem__text_top">
+                                                <p class="pricingItem__title pricingItem__title_top"><span class="pricingItem__textItem pricingItem__textItem_18px">Тент </span><span class="pricingItem__textItem_14px">(от 30м<sup>3</sup>)</span></p>
+                                                <div class="pricingItem__textLeft">
+                                                    <p class="pricingItem__textItem">без НДС</p>
+                                                    <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px pricingItem__textItem">260</span> грн/час</p>
+                                                </div>
+                                                <div class="pricingItem__textRight">
+                                                    <p class="pricingItem__textItem">б/н с НДС</p>
+                                                    <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">315</span> грн/час</p>
+                                                </div>
+                                        </div>
+                                        <div class="pricingItem__text pricingItem__text_mid">
+                                            <p class="pricingItem__title">Подачи автомобиля:</p>
+                                            <div class="pricingItem__textLeft">
+                                                <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">260</span> грн</p>
+                                            </div>
+                                            <div class="pricingItem__textRight">
+                                                <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">315</span> грн</p>
+                                            </div>
+                                        </div>
+                                        <div class="pricingItem__text pricingItem__text_bottom">
+                                            <p class="pricingItem__title pricingItem__title_mb0">Минимальный заказ</p>
+                                            <p class="pricingItem__subtitle">2 часа + подача:</p>
+                                            <div class="pricingItem__textLeft">
+                                                <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">1040</span> грн</p>
+                                            </div>
+                                            <div class="pricingItem__textRight">
+                                                <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">1260</span> грн</p>
+                                            </div>
+                                        </div>
+                                        <div class="pricingItem__text pricingItem__text_bottom pricingItem__textCenter">
+                                            <p class="pricingItem__textItem pricingItem__textItem_16px ">5 тонники</p>
+                                        </div>
+                                    </div><!-- pricingItem__textBlock -->
+                                </div>
+
+                                <div class="pricingItem__buttons">
+                                    <a href="service-open.html" class="pricingItem__button btn pricingItem__button_white">Подробнее</a>
+                                    <div class="pricingItem__button btn pricingItem__button_blue">Заказать</div>
+                                </div>
+                            </div><!-- pricingItem -->
+                            <div class="pricingItem">
+                                <div class="pricingItem__container">
+                                    <figure class="pricingItem__figure"><img src="img/pricing/truck4.png" alt="" class="pricingItem__img"></figure>
+                                    <div class="pricingItem__textBlock">
+
+                                        <div class="pricingItem__text pricingItem__text_top">
+                                                <p class="pricingItem__title pricingItem__title_top"><span class="pricingItem__textItem pricingItem__textItem_18px">Гидроборт </span><span class="pricingItem__textItem_14px">(от 30м<sup>3</sup>)</span></p>
+                                                <div class="pricingItem__textLeft">
+                                                    <p class="pricingItem__textItem">без НДС</p>
+                                                    <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px pricingItem__textItem">260</span> грн/час</p>
+                                                </div>
+                                                <div class="pricingItem__textRight">
+                                                    <p class="pricingItem__textItem">б/н с НДС</p>
+                                                    <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">315</span> грн/час</p>
+                                                </div>
+                                        </div>
+                                        <div class="pricingItem__text pricingItem__text_mid">
+                                            <p class="pricingItem__title">Подачи автомобиля:</p>
+                                            <div class="pricingItem__textLeft">
+                                                <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">260</span> грн</p>
+                                            </div>
+                                            <div class="pricingItem__textRight">
+                                                <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">315</span> грн</p>
+                                            </div>
+                                        </div>
+                                        <div class="pricingItem__text pricingItem__text_bottom">
+                                            <p class="pricingItem__title pricingItem__title_mb0">Минимальный заказ</p>
+                                            <p class="pricingItem__subtitle">2 часа + подача:</p>
+                                            <div class="pricingItem__textLeft">
+                                                <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">1040</span> грн</p>
+                                            </div>
+                                            <div class="pricingItem__textRight">
+                                                <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">1260</span> грн</p>
+                                            </div>
+                                        </div>
+                                        <div class="pricingItem__text pricingItem__text_bottom pricingItem__textCenter">
+                                            <p class="pricingItem__textItem pricingItem__textItem_16px ">5 тонники</p>
+                                        </div>
+                                    </div><!-- pricingItem__textBlock -->
+                                </div>
+
+                                <div class="pricingItem__buttons">
+                                    <a href="service-open.html" class="pricingItem__button btn pricingItem__button_white">Подробнее</a>
+                                    <div class="pricingItem__button btn pricingItem__button_blue">Заказать</div>
+                                </div>
+                            </div><!-- pricingItem -->
+                            <div class="pricingItem">
+                                <div class="pricingItem__container">
+                                    <figure class="pricingItem__figure"><img src="img/pricing/truck5.png" alt="" class="pricingItem__img"></figure>
+                                    <div class="pricingItem__textBlock">
+
+                                        <div class="pricingItem__text pricingItem__text_top">
+                                                <p class="pricingItem__title pricingItem__title_top"><span class="pricingItem__textItem pricingItem__textItem_18px">Тент </span><span class="pricingItem__textItem_14px">(от 40-60м<sup>3</sup>)</span></p>
+                                                <div class="pricingItem__textLeft">
+                                                    <p class="pricingItem__textItem">без НДС</p>
+                                                    <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px pricingItem__textItem">330</span> грн/час</p>
+                                                </div>
+                                                <div class="pricingItem__textRight">
+                                                    <p class="pricingItem__textItem">б/н с НДС</p>
+                                                    <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">400</span> грн/час</p>
+                                                </div>
+                                        </div>
+                                        <div class="pricingItem__text pricingItem__text_mid">
+                                            <p class="pricingItem__title">Подачи автомобиля:</p>
+                                            <div class="pricingItem__textLeft">
+                                                <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">330</span> грн</p>
+                                            </div>
+                                            <div class="pricingItem__textRight">
+                                                <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">400</span> грн</p>
+                                            </div>
+                                        </div>
+                                        <div class="pricingItem__text pricingItem__text_bottom">
+                                            <p class="pricingItem__title pricingItem__title_mb0">Минимальный заказ</p>
+                                            <p class="pricingItem__subtitle">2 часа + подача:</p>
+                                            <div class="pricingItem__textLeft">
+                                                <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">1650</span> грн</p>
+                                            </div>
+                                            <div class="pricingItem__textRight">
+                                                <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">2000</span> грн</p>
+                                            </div>
+                                        </div>
+                                        <div class="pricingItem__text pricingItem__text_bottom pricingItem__textCenter">
+                                            <p class="pricingItem__textItem pricingItem__textItem_16px ">10 тонники</p>
+                                        </div>
+                                    </div><!-- pricingItem__textBlock -->
+                                </div>
+
+                                <div class="pricingItem__buttons">
+                                    <a href="service-open.html" class="pricingItem__button btn pricingItem__button_white">Подробнее</a>
+                                    <div class="pricingItem__button btn pricingItem__button_blue">Заказать</div>
+                                </div>
+                            </div><!-- pricingItem -->
+                            <div class="pricingItem">
+                                <div class="pricingItem__container">
+                                    <figure class="pricingItem__figure"><img src="img/pricing/truck5.png" alt="" class="pricingItem__img"></figure>
+                                    <div class="pricingItem__textBlock">
+
+                                        <div class="pricingItem__text pricingItem__text_top">
+                                                <p class="pricingItem__title pricingItem__title_top"><span class="pricingItem__textItem pricingItem__textItem_17px">Гидроборт </span><span class="pricingItem__textItem_14px">(от 40-60м<sup>3</sup>)</span></p>
+                                                <div class="pricingItem__textLeft">
+                                                    <p class="pricingItem__textItem">без НДС</p>
+                                                    <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px pricingItem__textItem">330</span> грн/час</p>
+                                                </div>
+                                                <div class="pricingItem__textRight">
+                                                    <p class="pricingItem__textItem">б/н с НДС</p>
+                                                    <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">400</span> грн/час</p>
+                                                </div>
+                                        </div>
+                                        <div class="pricingItem__text pricingItem__text_mid">
+                                            <p class="pricingItem__title">Подачи автомобиля:</p>
+                                            <div class="pricingItem__textLeft">
+                                                <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">330</span> грн</p>
+                                            </div>
+                                            <div class="pricingItem__textRight">
+                                                <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">400</span> грн</p>
+                                            </div>
+                                        </div>
+                                        <div class="pricingItem__text pricingItem__text_bottom">
+                                            <p class="pricingItem__title pricingItem__title_mb0">Минимальный заказ</p>
+                                            <p class="pricingItem__subtitle">2 часа + подача:</p>
+                                            <div class="pricingItem__textLeft">
+                                                <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">1650</span> грн</p>
+                                            </div>
+                                            <div class="pricingItem__textRight">
+                                                <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">2000</span> грн</p>
+                                            </div>
+                                        </div>
+                                        <div class="pricingItem__text pricingItem__text_bottom pricingItem__textCenter">
+                                            <p class="pricingItem__textItem pricingItem__textItem_16px ">10 тонники</p>
+                                        </div>
+                                    </div><!-- pricingItem__textBlock -->
+                                </div>
+
+                                <div class="pricingItem__buttons">
+                                    <a href="service-open.html" class="pricingItem__button btn pricingItem__button_white">Подробнее</a>
+                                    <div class="pricingItem__button btn pricingItem__button_blue">Заказать</div>
+                                </div>
+                            </div><!-- pricingItem -->
+                            <div class="pricingItem">
+                                <div class="pricingItem__container">
+                                    <figure class="pricingItem__figure"><img src="img/pricing/truck3.png" alt="" class="pricingItem__img"></figure>
+                                    <div class="pricingItem__textBlock">
+
+                                        <div class="pricingItem__text pricingItem__text_top">
+                                                <p class="pricingItem__title pricingItem__title_top"><span class="pricingItem__textItem pricingItem__textItem_18px">Борт </span><span class="pricingItem__textItem_14px">(от 6м)</span></p>
+                                                <div class="pricingItem__textLeft">
+                                                    <p class="pricingItem__textItem">без НДС</p>
+                                                    <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px pricingItem__textItem">330</span> грн/час</p>
+                                                </div>
+                                                <div class="pricingItem__textRight">
+                                                    <p class="pricingItem__textItem">б/н с НДС</p>
+                                                    <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">400</span> грн/час</p>
+                                                </div>
+                                        </div>
+                                        <div class="pricingItem__text pricingItem__text_mid">
+                                            <p class="pricingItem__title">Подачи автомобиля:</p>
+                                            <div class="pricingItem__textLeft">
+                                                <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">330</span> грн</p>
+                                            </div>
+                                            <div class="pricingItem__textRight">
+                                                <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">400</span> грн</p>
+                                            </div>
+                                        </div>
+                                        <div class="pricingItem__text pricingItem__text_bottom">
+                                            <p class="pricingItem__title pricingItem__title_mb0">Минимальный заказ</p>
+                                            <p class="pricingItem__subtitle">2 часа + подача:</p>
+                                            <div class="pricingItem__textLeft">
+                                                <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">1650</span> грн</p>
+                                            </div>
+                                            <div class="pricingItem__textRight">
+                                                <p class="pricingItem__textItem"><span class="pricingItem__textItem_16px">2000</span> грн</p>
+                                            </div>
+                                        </div>
+                                        <div class="pricingItem__text pricingItem__text_bottom pricingItem__textCenter">
+                                            <p class="pricingItem__textItem pricingItem__textItem_16px ">10 тонники</p>
+                                        </div>
+                                    </div><!-- pricingItem__textBlock -->
+                                </div>
+
+                                <div class="pricingItem__buttons">
+                                    <a href="service-open.html" class="pricingItem__button btn pricingItem__button_white">Подробнее</a>
+                                    <div class="pricingItem__button btn pricingItem__button_blue">Заказать</div>
+                                </div>
+                            </div><!-- pricingItem -->
+                            <div class="pricingItem">
+                                <div class="pricingItem__container">
+                                    <figure class="pricingItem__figure"><img src="img/pricing/truck6.png" alt="" class="pricingItem__img"></figure>
+                                    <div class="pricingItem__textBlock">
+
+                                        <div class="pricingItem__text pricingItem__text_top">
+                                                <p class="pricingItem__title pricingItem__title_top mb-0"><span class="pricingItem__textItem pricingItem__textItem_16px">Тент, цельномет </span><span class="pricingItem__textItem_14px">13.6м</span></p>
+                                        </div>
+                                        <div class="pricingItem__text pricingItem__text_mid">
+                                            <p class="pricingItem__title mb-0">Стоимость выполнения работ договорная</p>
+                                            <p class="pricingItem__textItem text-center">(в зависимости от характера груза и  маршрута перевозки)</p>
+                                        </div>
+                                        <div class="pricingItem__text pricingItem__text_bottom pricingItem__textCenter">
+                                            <p class="pricingItem__textItem pricingItem__textItem_16px ">20 тонники</p>
+                                        </div>
+                                    </div><!-- pricingItem__textBlock -->
+                                </div>
+
+                                <div class="pricingItem__buttons">
+                                    <a href="service-open.html" class="pricingItem__button btn pricingItem__button_white">Подробнее</a>
+                                    <div class="pricingItem__button btn pricingItem__button_blue">Заказать</div>
+                                </div>
+                            </div><!-- pricingItem -->
+                            <div class="pricingItem">
+                                <div class="pricingItem__container">
+                                    <figure class="pricingItem__figure"><img src="img/pricing/truck7.png" alt="" class="pricingItem__img"></figure>
+                                    <div class="pricingItem__textBlock">
+
+                                        <div class="pricingItem__text pricingItem__text_top">
+                                                <p class="pricingItem__title pricingItem__title_top mb-0"><span class="pricingItem__textItem pricingItem__textItem_18px">Борт </span class="pricingItem__textItem_16px"> <span>от  </span><span class="pricingItem__textItem_14px">12м-13.6м</span></p>
+                                        </div>
+                                        <div class="pricingItem__text pricingItem__text_mid">
+                                            <p class="pricingItem__title mb-0">Стоимость выполнения работ договорная</p>
+                                            <p class="pricingItem__textItem text-center">(в зависимости от характера груза и  маршрута перевозки)</p>
+                                        </div>
+                                        <div class="pricingItem__text pricingItem__text_bottom pricingItem__textCenter">
+                                            <p class="pricingItem__textItem pricingItem__textItem_16px ">20 тонники</p>
+                                        </div>
+                                    </div><!-- pricingItem__textBlock -->
+                                </div>
+
+                                <div class="pricingItem__buttons">
+                                    <a href="service-open.html" class="pricingItem__button btn pricingItem__button_white">Подробнее</a>
+                                    <div class="pricingItem__button btn pricingItem__button_blue">Заказать</div>
+                                </div>
+                            </div><!-- pricingItem -->
+                        </div><!-- pricing -->
+                        <div class="pricing__bottom">
+                            <p class="pricing__text">*Подача/заезд транспорта в пригород оговаривается дополнительно с менеджером.</p>
+                            <p class="pricing__text">**Заезд автомобиля в центр Киева автомобилем грузоподъемностью более 3т оговаривается дополнительно. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- section-pricing -->
+        <footer>
+            <div class="container px-0">
+                <div class="row mx-0">
+                    <div class="col-md-2 px-0 col-lg-2">
+                        <div class="footerLogo">
+                            <a href="#" class="footerLogo__link"><img src="img/logo.svg" alt="company-logo" class="footerLogo__img"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-lg-4 col-sm-6">
+                        <div class="footerMenus">
+                            <ul class="footerMenu">
+                                <li class="footerMenu__item"><a href="index.html" class="footerMenu__link">Главная</a></li>
+                                <li class="footerMenu__item"><a href="about.html" class="footerMenu__link">О компании</a></li>
+                                <li class="footerMenu__item"><a href="comments.html" class="footerMenu__link">Отзывы</a></li>
+                                <li class="footerMenu__item"><a href="contacts.html" class="footerMenu__link">Контакты</a></li>
+                            </ul>
+                            <ul class="footerMenu">
+                                <li class="footerMenu__item"><a href="services-kiev.html" class="footerMenu__link">Грузоперевозки по Киеву и области</a></li>
+                                <li class="footerMenu__item"><a href="#" class="footerMenu__link">Грузоперевозки по Украине</a></li>
+                                <li class="footerMenu__item"><a href="#" class="footerMenu__link">Спецтехника</a></li>
+                                <li class="footerMenu__item"><a href="#" class="footerMenu__link">Мувинг</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-5 px-0 col-lg-6 col-sm-6">
+                        <div class="footerContacts">
+                            <div class="footerContacts__location">
+                                <span><i class="icon-placeholder-futer"></i></span>
+                                <p class="footerContacts__address">Украина г. Киев <br> ул. Бережанская 4</p>
+                            </div>
+                            <div class="footerContacts__phones">
+                                <span><i class="icon-telephone"></i></span>
+                                <div class="footerContacts__phonesContainer">
+                                    <a href="tel:+380443313818" class="footerContacts__phone">+38 (044) 331 38 18</a>
+                                    <a href="tel:+380443313833" class="footerContacts__phone">+38 (044) 331 38 33</a>
+                                </div>
+
+                            </div>
+                            <div class="fb fb-bottom">
+                                <a href="#" class="fb__link"><i class="icon-facebook"></i></a>
+                            </div>
+                            <div class="footerContacts__mailto">
+                                <span><i class="icon-email"></i></span>
+                                <a href="mailto:suntrans@suntrans.kiev.ua" class="footerContacts__email">suntrans@suntrans.kiev.ua</a>
+                            </div>
+                            <div class="footerContacts__copyright">
+                                <p class="footerContacts__text">Copyright © 2017 - Сантранс: Грузоперевозки Украина</p>
+                                <div class="footerContacts__paradigma">
+                                    <p class="footerContacts__text">Разработка сайта -&nbsp;</p>
+                                    <a href="#" class="footerContacts__link"><img src="img/logo_paradigma.png" alt="" class="footerContacts__img"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <section class="section-map">
+            <h2 class="map__title">Гугл карта с расположением офиса</h2>
+            <div class="map" id="map">
+            </div>
+        </section>
+        <div class="wrapper__overlay" id="wrapperOverlay">
+
+        </div>
+        <div class="callbackPopup" id="callbackPopup">
+            <div class="callbackPopup__wrapper">
+                <span class="callbackPopup__close" id="callbackClose"><i class="icon-close"></i></span>
+                <h3 class="callbackPopup__title">Заказать звонок</h3>
+                <form action="#" class="callbackPopup__form">
+                    <dl class="">
+                        <dt><label for="callbackPopup_userName" class="callbackPopup__label">Ваше имя</label></dt>
+                        <dd><input type="text" name="" value="" class="callbackPopup__input" id="callbackPopup_userName"></dd>
+
+                        <dt><label for="callbackPopup_userPhone" class="callbackPopup__label">Ваш номер телефона*</label></dt>
+                        <dd><input type="text" name="" value="" class="callbackPopup__input" id="callbackPopup_userPhone"></dd>
+                    </dl>
+                    <button type="submit" name="submit_button" class="btn callbackPopup__btn" id="callbackSubmit">Отправить</button>
+                </form>
+            </div>
+        </div>
+        <div class="thanksPopup" id="thanksPopup">
+            <div class="thanksPopup__wrapper">
+                <span class="thanksPopup__close" id="thanksClose"><i class="icon-close"></i></span>
+                <span class="thanksPopup__icon"><i class="icon-check-square"></i></span>
+                <h3 class="thanksPopup__title">спасибо за заявку</h3>
+                <p class="thanksPopup__text">Наш менеджер свяжется с Вами</p>
+            </div>
+        </div>
+        <a href="#" class="scrollToTop"><i class="icon-up-arrow"></i></a>
+        <div class="mobile-wrapper__overlay" id="mobile-wrapper__overlay"></div>
+    </div>
+    <script  src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="libs/jquery-2.2.4/jquery-2.2.4.min.js" charset="utf-8"></script>
+    <script src="libs/mmenu/jquery.mmenu.all.js" charset="utf-8"></script>
+    <script src="libs/lightbox/lightbox.min.js" charset="utf-8"></script>
+    <script src="js/main.js" charset="utf-8"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJhDRXQmaiDkn_kyO2sr-0vzSHbZqnz_4&callback=initMap">
+    </script>
+
+</body>
+</html>

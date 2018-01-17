@@ -226,9 +226,12 @@ header {
   transition: all .5s linear;
 }
 
-.header-fixed {
+.header-fixed header {
+  border-bottom: 1px solid #7c7c7c;
   padding-top: 20px;
   position: fixed;
+  left: 0;
+  right: 0;
   width: 100%;
   z-index: 99;
   -webkit-transition: all .5s linear;
